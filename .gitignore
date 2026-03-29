@@ -49,3 +49,6 @@ website-frontend/.env.*.local
 .vscode/
 *.swp
 *.swo
+
+# Local Backups
+backup_db/
