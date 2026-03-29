@@ -1,0 +1,13 @@
+Django>=5.0,<6.0
+djangorestframework
+mongoengine
+django-cors-headers
+django-environ
+djangorestframework-simplejwt
+Pillow
+django-mongodb-backend
+gunicorn
+cryptography
+requests
+google-auth
+python-dateutil
