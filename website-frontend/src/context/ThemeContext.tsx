@@ -119,10 +119,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
                 const fontsToLoad = [];
                 if (typography.typography_settings.bodyFont) fontsToLoad.push(typography.typography_settings.bodyFont);
                 if (typography.typography_settings.headingFont) fontsToLoad.push(typography.typography_settings.headingFont);
-                
+
                 if (fontsToLoad.length > 0) {
-                   const fontQuery = Array.from(new Set(fontsToLoad)).map(f => f.replace(/\s+/g, '+')).join('&family=');
-                   link.href = `https://fonts.googleapis.com/css2?family=${fontQuery}:wght@300;400;500;600;700&display=swap`;
+                    const fontQuery = Array.from(new Set(fontsToLoad)).map(f => f.replace(/\s+/g, '+')).join('&family=');
+                    link.href = `https://fonts.googleapis.com/css2?family=${fontQuery}:wght@300;400;500;600;700&display=swap`;
                 }
             }
         }
@@ -132,13 +132,23 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
         // Apply Colors to CSS Variables
         root.style.setProperty('--color-primary', currentColors.primary);
+
+        // Update RGB for transparency effects (e.g. for glows, overlays)
+        if (currentColors.primary?.startsWith('#') && currentColors.primary.length === 7) {
+            const r = parseInt(currentColors.primary.slice(1, 3), 16);
+            const g = parseInt(currentColors.primary.slice(3, 5), 16);
+            const b = parseInt(currentColors.primary.slice(5, 7), 16);
+            if (!isNaN(r) && !isNaN(g) && !isNaN(b)) {
+                root.style.setProperty('--color-primary-rgb', `${r}, ${g}, ${b}`);
+            }
+        }
         root.style.setProperty('--color-secondary', currentColors.secondary || '#a3b18a');
         root.style.setProperty('--color-accent', currentColors.accent);
         root.style.setProperty('--color-background', currentColors.background);
         root.style.setProperty('--color-bg', currentColors.background);
         root.style.setProperty('--color-surface', currentColors.surface);
         root.style.setProperty('--color-text', currentColors.text || '#ffffff');
-        
+
         // Borders and Panels (dynamically adapt to text color for contrast)
         const textColor = currentColors.text || '#ffffff';
         root.style.setProperty('--color-border', `color-mix(in srgb, ${textColor} 15%, transparent)`);

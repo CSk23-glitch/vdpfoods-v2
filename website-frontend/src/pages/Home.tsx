@@ -11,10 +11,9 @@ export default function Home() {
     // Media States
     const [isVideoMuted, setIsVideoMuted] = useState(true);
     const [favoriteProducts, setFavoriteProducts] = useState<any[]>([]);
-    const [categories, setCategories] = useState<any[]>([]);
-    const [loadingCats, setLoadingCats] = useState(true);
+
     const { addToCart, formatPrice } = useCart();
-    
+
     const heroVideoRef = useRef<HTMLVideoElement>(null);
     const philosophyVideoRef = useRef<HTMLVideoElement>(null);
 
@@ -33,7 +32,7 @@ export default function Home() {
                 const prodRes = await fetch(`${API_URL}/products/`);
                 if (!prodRes.ok) return;
                 const allProducts = await prodRes.json();
-                
+
                 const favData = allProducts.filter((p: any) => favIds.includes(p._id));
                 setFavoriteProducts(favData);
             } catch (err) {
@@ -41,23 +40,11 @@ export default function Home() {
             }
         };
 
-        const fetchCategories = async () => {
-            try {
-                const res = await fetch(`${API_URL}/categories/`);
-                if (!res.ok) throw new Error('Failed to fetch categories');
-                const data = await res.json();
-                setCategories(data.filter((c: any) => !c.parent));
-            } catch (err) {
-                console.error("Failed to fetch categories:", err);
-            } finally {
-                setLoadingCats(false);
-            }
-        };
+
 
         fetchFavoritesData();
-        fetchCategories();
     }, []);
-    
+
     const toggleAudio = () => {
         if (heroVideoRef.current) {
             heroVideoRef.current.muted = !heroVideoRef.current.muted;
@@ -115,11 +102,11 @@ export default function Home() {
                 >
                     <source src="/assets/video5.mp4" type="video/mp4" />
                 </video>
-                <div 
-                    className="absolute top-0 left-0 w-full h-full z-0" 
-                    style={{ background: 'linear-gradient(to bottom, rgba(0,0,0, 0.4) 0%, var(--color-bg) 100%)', opacity: 0.8 }} 
+                <div
+                    className="absolute top-0 left-0 w-full h-full z-0"
+                    style={{ background: 'linear-gradient(to bottom, rgba(0,0,0, 0.4) 0%, var(--color-bg) 100%)', opacity: 0.8 }}
                 />
-                
+
                 {/* Flying Birds Animation Background */}
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-60">
                     {[...Array(5)].map((_, i) => (
@@ -151,8 +138,8 @@ export default function Home() {
                     <motion.div variants={fadeUpVariant} className="relative inline-block mb-10">
                         {/* Sweeping Leaf Animation Wrapper */}
                         <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-visible">
-                            <motion.div 
-                                animate={{ rotate: [0, 10, 0], x: [0, 20, 0] }} 
+                            <motion.div
+                                animate={{ rotate: [0, 10, 0], x: [0, 20, 0] }}
                                 transition={{ repeat: Infinity, duration: 3 }}
                                 className="w-10 h-10 text-[var(--color-primary)] opacity-80"
                             >
@@ -177,7 +164,7 @@ export default function Home() {
 
                     <motion.div variants={fadeUpVariant} className="flex gap-4 justify-center items-center flex-wrap">
                         <Link to="/products">
-                            <motion.div 
+                            <motion.div
                                 whileHover={{ scale: 1.05, x: 10 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="px-8 py-4 bg-[var(--color-primary)] text-[var(--color-bg)] rounded-full font-bold tracking-widest uppercase text-sm shadow-xl"
@@ -209,11 +196,11 @@ export default function Home() {
                     >
                         <h3 className="text-[var(--color-primary)] uppercase tracking-widest font-black mb-4">Our Promise</h3>
                         <h2 className="font-serif text-4xl md:text-5xl font-black mb-8 text-[var(--color-text)]">Food Made With <span className="text-[var(--color-secondary)]">Love & Purity</span></h2>
-                        
+
                         <p className="text-lg text-[var(--color-text)]/80 leading-relaxed mb-6">
                             Ancient Indian culture views food (Anna) not just as physical fuel, but as a divine manifestation (Brahman) directly linked to the health of the body, mind, and the spirit. The lifestyle was based on Sattva (purity), moderation, and living in harmony with nature.
                         </p>
-                        
+
                         <p className="text-lg text-[var(--color-text)]/80 leading-relaxed">
                             At Videeptha , we look backwards to move forward. Our approach is grounded in Ayurvedic principles and ancient village wisdom. We meticulously research every raw material, working directly with soil-conscious farmers, and have worked meticulously on each and every recipe to bring better health and authentic taste to you and your family.
                         </p>
@@ -257,69 +244,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Market Discovery Lobby */}
-            <section className="py-24 px-6 bg-[var(--color-bg)]">
-                <div className="max-w-7xl mx-auto">
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={staggerVariants}
-                        className="text-center mb-16"
-                    >
-                        <h3 className="text-[var(--color-primary)] uppercase tracking-widest font-black mb-4">The Village Market</h3>
-                        <h2 className="font-serif text-5xl md:text-6xl font-black mb-6 text-[var(--color-text)]">Explore Our <span className="text-[var(--color-secondary)]">Collections</span></h2>
-                        <p className="max-w-2xl mx-auto text-lg text-[var(--color-text)]/60">
-                            Discover the essence of pure nutrition through our curated artisanal categories.
-                        </p>
-                    </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {loadingCats ? (
-                            [...Array(6)].map((_, i) => (
-                                <div key={i} className="aspect-[4/5] bg-[var(--color-surface)] animate-pulse rounded-[2rem]" />
-                            ))
-                        ) : (
-                            categories.map((cat) => (
-                                <motion.div
-                                    key={cat.id}
-                                    variants={fadeUpVariant}
-                                    whileHover={{ y: -10 }}
-                                    className="group relative h-[500px] overflow-hidden rounded-[2.5rem] border border-[var(--color-border)] shadow-2xl bg-[var(--color-surface)]"
-                                >
-                                    <img 
-                                        src={cat.banner_image_url || '/assets/category-fallback.png'} 
-                                        alt={cat.name}
-                                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80" />
-                                    
-                                    <div className="absolute inset-x-0 bottom-0 p-10 flex flex-col items-center text-center">
-                                        <Leaf size={32} className="text-[var(--color-secondary)] mb-4" />
-                                        <h3 className="font-serif text-3xl font-black text-white mb-3 uppercase tracking-wider">{cat.name}</h3>
-                                        <p className="text-white/70 text-sm mb-6 line-clamp-2 max-w-[80%]">
-                                            {cat.banner_details?.description || "Curated artisanal essentials for a healthier lifestyle."}
-                                        </p>
-                                        
-                                        <div className="flex gap-3">
-                                            <Link to={`/market?mainCategory=${cat.id}`}>
-                                                <button className="px-6 py-3 bg-[var(--color-primary)] text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-[var(--color-secondary)] transition-colors shadow-xl">
-                                                    Sub-Categories
-                                                </button>
-                                            </Link>
-                                            <Link to={`/products?category=${cat.id}`}>
-                                                <button className="px-6 py-3 bg-white/10 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-white hover:text-black transition-all border border-white/20">
-                                                    View All Items
-                                                </button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            ))
-                        )}
-                    </div>
-                </div>
-            </section>
 
             {/* About Us Section */}
             <section id="about-us" className="py-24 px-6 bg-white text-[var(--color-text)]">
@@ -398,8 +323,8 @@ export default function Home() {
                 </motion.h2>
 
                 <div className="relative z-10 w-full overflow-hidden">
-                    <motion.div 
-                        animate={{ x: [0, -1000] }} 
+                    <motion.div
+                        animate={{ x: [0, -1000] }}
                         transition={{ repeat: Infinity, ease: "linear", duration: 10 }}
                         className="flex gap-6 px-6 w-max"
                     >
@@ -453,28 +378,28 @@ export default function Home() {
 
                         <div className="flex gap-6 overflow-x-auto hide-scrollbar pb-8 snap-x">
                             {favoriteProducts.map((product) => (
-                                <motion.div 
-                                    key={product._id} 
+                                <motion.div
+                                    key={product._id}
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     viewport={{ once: true }}
                                     className="min-w-[280px] max-w-[280px] snap-start bg-[var(--color-panel)] border border-[var(--color-border)] rounded-3xl p-5 hover:border-[var(--color-primary)]/50 transition-all hover:-translate-y-2 shadow-lg group flex flex-col"
                                 >
                                     <Link to={`/products/${product._id}`} className="block w-full aspect-[4/5] rounded-2xl overflow-hidden mb-5 bg-white">
-                                        <img 
-                                            src={product.images?.[0] || 'https://via.placeholder.com/300'} 
-                                            alt={product.name} 
+                                        <img
+                                            src={product.images?.[0] || 'https://via.placeholder.com/300'}
+                                            alt={product.name}
                                             className="w-full h-full object-cover mix-blend-multiply group-hover:scale-110 transition-transform duration-700"
                                         />
                                     </Link>
-                                    
+
                                     <div className="flex flex-col flex-1 mt-auto">
                                         <Link to={`/products/${product._id}`}>
                                             <h3 className="font-black font-serif text-xl text-[var(--color-text)] line-clamp-2 leading-tight group-hover:text-[var(--color-primary)] transition-colors">{product.name}</h3>
                                         </Link>
                                         <div className="text-[var(--color-primary)] font-black mt-2 mb-4">{formatPrice(product.price)}</div>
-                                        
-                                        <button 
+
+                                        <button
                                             onClick={(e) => {
                                                 e.preventDefault();
                                                 addToCart({ ...product, price: product.price, image: product.images?.[0] || '', quantity: 1 });
@@ -519,7 +444,7 @@ export default function Home() {
                         <h3 className="text-4xl md:text-5xl font-serif font-black text-[var(--color-primary)] mb-6 leading-tight">Discover Our Entire Range</h3>
                         <p className="text-[var(--color-text)]/80 text-xl font-medium mb-10 leading-relaxed">Explore over 600+ authentic, untouched products from the heart of our villages.</p>
                         <Link to="/products">
-                            <motion.div 
+                            <motion.div
                                 whileHover={{ scale: 1.05, x: 15 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="px-8 py-4 bg-[var(--color-secondary)] text-[var(--color-bg)] rounded-full font-black uppercase tracking-widest text-sm flex items-center justify-center self-start shadow-xl w-max"
@@ -530,7 +455,7 @@ export default function Home() {
                     </motion.div>
                 </div>
             </section>
-            
+
             <Footer />
         </div>
     );

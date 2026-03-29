@@ -158,7 +158,7 @@ export default function ProductsPage() {
     // Filter labels: Show "All" + names of categories found in products
     const filterCategories = [
         { id: 'All', name: 'All' },
-        ...allCategories.filter(cat => 
+        ...allCategories.filter(cat =>
             // Only show categories that have products in the current list
             products.some(p => p.category_ids.includes(cat.id) || p.category_ids.includes(cat._id))
         ).map(cat => ({
@@ -198,13 +198,13 @@ export default function ProductsPage() {
 
                     {/* Category Banner or Title Section */}
                     {categoryData ? (
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             className="relative h-[300px] md:h-[400px] rounded-[40px] overflow-hidden mb-16 border border-[var(--color-border)] shadow-2xl"
                         >
-                            <img 
-                                src={categoryData.banner_image_url || categoryData.media_url} 
+                            <img
+                                src={categoryData.banner_image_url || categoryData.media_url}
                                 className="absolute inset-0 w-full h-full object-cover"
                                 alt={categoryData.name}
                             />
@@ -245,7 +245,7 @@ export default function ProductsPage() {
                                 transition={{ delay: 0.5 }}
                                 className="text-xl text-[var(--color-text)]/70 max-w-2xl mx-auto"
                             >
-                                Browsing {selectedCategory === 'All' ? 'Every Artisanal Treasure' : selectedCategory}
+                                Browsing {selectedCategory === 'All' ? 'Every Artisanal Treasure' : (allCategories.find(c => (c.id === selectedCategory || c._id === selectedCategory))?.name || 'Selected Category')}
                             </motion.p>
                         </motion.div>
                     )}
@@ -270,7 +270,7 @@ export default function ProductsPage() {
                                     </button>
                                 ))}
                             </div>
-                            
+
                             {/* Sub-Filters & Controls */}
                             <div className="flex flex-wrap items-center justify-between gap-6 mt-4 opacity-70 hover:opacity-100 transition-opacity">
                                 <div className="flex items-center gap-6 flex-1 max-w-sm">
@@ -284,7 +284,7 @@ export default function ProductsPage() {
                                         className="w-full accent-[var(--color-primary)] bg-[var(--color-border)] h-[2px] rounded-lg appearance-none cursor-pointer hover:h-1 transition-all"
                                     />
                                 </div>
-                                
+
                                 <button
                                     onClick={() => {
                                         setSelectedCategory('All');
@@ -327,9 +327,9 @@ export default function ProductsPage() {
                                                     }}
                                                     className="p-1.5 rounded-full hover:bg-[var(--color-panel)] transition-colors"
                                                 >
-                                                    <Heart 
-                                                        size={14} 
-                                                        className={favorites.includes(product._id) ? "fill-[#d55b3e] text-[#d55b3e]" : "text-[var(--color-text)]/30"} 
+                                                    <Heart
+                                                        size={14}
+                                                        className={favorites.includes(product._id) ? "fill-[#d55b3e] text-[#d55b3e]" : "text-[var(--color-text)]/30"}
                                                     />
                                                 </button>
                                                 <Link to={`/products/${product._id}`} onClick={() => handleProductClick(product._id)}>
@@ -352,11 +352,10 @@ export default function ProductsPage() {
                                                 <button
                                                     key={w}
                                                     onClick={() => setSelectedWeights(prev => ({ ...prev, [product._id]: w }))}
-                                                    className={`px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest transition-all ${
-                                                        (selectedWeights[product._id] || (w === '500g' ? '500g' : '')) === w
-                                                            ? 'bg-[var(--color-primary)] text-white shadow-md'
-                                                            : 'bg-[var(--color-surface)] text-[var(--color-text)]/40 border border-[var(--color-border)] hover:border-[var(--color-primary)]/30'
-                                                    }`}
+                                                    className={`px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest transition-all ${(selectedWeights[product._id] || (w === '500g' ? '500g' : '')) === w
+                                                        ? 'bg-[var(--color-primary)] text-white shadow-md'
+                                                        : 'bg-[var(--color-surface)] text-[var(--color-text)]/40 border border-[var(--color-border)] hover:border-[var(--color-primary)]/30'
+                                                        }`}
                                                 >
                                                     {w === '100g' ? 'Trail 100g' : w}
                                                 </button>
@@ -370,9 +369,9 @@ export default function ProductsPage() {
                                             <span className="text-2xl font-serif font-black text-[var(--color-primary)]">{formatPrice(product.price)}</span>
                                             <span className="text-[9px] font-black uppercase tracking-widest text-[var(--color-text)]/30 mt-1">Free Delivery</span>
                                         </div>
-                                        
+
                                         <div className="flex items-center gap-3">
-                                            <a 
+                                            <a
                                                 href={getWhatsAppLink(product.name, selectedWeights[product._id] || '500g')}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -386,10 +385,10 @@ export default function ProductsPage() {
                                                 whileTap={{ scale: 0.95 }}
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    addToCart({ 
-                                                        ...product, 
-                                                        price: product.price, 
-                                                        image: product.images?.[0] || '', 
+                                                    addToCart({
+                                                        ...product,
+                                                        price: product.price,
+                                                        image: product.images?.[0] || '',
                                                         quantity: 1,
                                                         selectedWeight: selectedWeights[product._id] || '500g'
                                                     });

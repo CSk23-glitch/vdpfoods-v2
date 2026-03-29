@@ -1,0 +1,148 @@
+Files temp_VDF/Veediptha_Website-backend/.env and Veediptha_Website-backend/.env differ
+Files temp_VDF/Veediptha_Website-backend/.env.example and Veediptha_Website-backend/.env.example differ
+Files temp_VDF/Veediptha_Website-backend/Dockerfile and Veediptha_Website-backend/Dockerfile differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/activate_all - Copy.py and Veediptha_Website-backend/Testing_verification/activate_all - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/activate_all.py and Veediptha_Website-backend/Testing_verification/activate_all.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/check_django_db - Copy.py and Veediptha_Website-backend/Testing_verification/check_django_db - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/check_django_db.py and Veediptha_Website-backend/Testing_verification/check_django_db.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/check_products - Copy.py and Veediptha_Website-backend/Testing_verification/check_products - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/check_products.py and Veediptha_Website-backend/Testing_verification/check_products.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/check_user - Copy.py and Veediptha_Website-backend/Testing_verification/check_user - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/check_user.py and Veediptha_Website-backend/Testing_verification/check_user.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/cleanup_admin - Copy.py and Veediptha_Website-backend/Testing_verification/cleanup_admin - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/cleanup_admin.py and Veediptha_Website-backend/Testing_verification/cleanup_admin.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/clear_customers - Copy.py and Veediptha_Website-backend/Testing_verification/clear_customers - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/clear_customers.py and Veediptha_Website-backend/Testing_verification/clear_customers.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/compare_dbs - Copy.py and Veediptha_Website-backend/Testing_verification/compare_dbs - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/compare_dbs.py and Veediptha_Website-backend/Testing_verification/compare_dbs.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/comprehensive_inspect - Copy.py and Veediptha_Website-backend/Testing_verification/comprehensive_inspect - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/comprehensive_inspect.py and Veediptha_Website-backend/Testing_verification/comprehensive_inspect.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/db - Copy.sqlite3 and Veediptha_Website-backend/Testing_verification/db - Copy.sqlite3 differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/db.sqlite3 and Veediptha_Website-backend/Testing_verification/db.sqlite3 differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug - Copy.log and Veediptha_Website-backend/Testing_verification/debug - Copy.log differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_500 - Copy.py and Veediptha_Website-backend/Testing_verification/debug_500 - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_500.py and Veediptha_Website-backend/Testing_verification/debug_500.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_db - Copy.py and Veediptha_Website-backend/Testing_verification/debug_db - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_db.py and Veediptha_Website-backend/Testing_verification/debug_db.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_endpoints_v2 - Copy.py and Veediptha_Website-backend/Testing_verification/debug_endpoints_v2 - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_endpoints_v2.py and Veediptha_Website-backend/Testing_verification/debug_endpoints_v2.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_mongo - Copy.py and Veediptha_Website-backend/Testing_verification/debug_mongo - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/debug_mongo.py and Veediptha_Website-backend/Testing_verification/debug_mongo.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/error__api_pages_ - Copy.html and Veediptha_Website-backend/Testing_verification/error__api_pages_ - Copy.html differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/error__api_pages_.html and Veediptha_Website-backend/Testing_verification/error__api_pages_.html differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/error__api_stories_ - Copy.html and Veediptha_Website-backend/Testing_verification/error__api_stories_ - Copy.html differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/error__api_stories_.html and Veediptha_Website-backend/Testing_verification/error__api_stories_.html differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/error_pages.html and Veediptha_Website-backend/Testing_verification/error_pages.html differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/error_stories.html and Veediptha_Website-backend/Testing_verification/error_stories.html differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/final_verify_login.py and Veediptha_Website-backend/Testing_verification/final_verify_login.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/find_all.py and Veediptha_Website-backend/Testing_verification/find_all.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/find_collections.py and Veediptha_Website-backend/Testing_verification/find_collections.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/find_profiles_final.py and Veediptha_Website-backend/Testing_verification/find_profiles_final.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/find_user_everywhere.py and Veediptha_Website-backend/Testing_verification/find_user_everywhere.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/fix_db.py and Veediptha_Website-backend/Testing_verification/fix_db.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/fix_db_links.py and Veediptha_Website-backend/Testing_verification/fix_db_links.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/hunt_ids.py and Veediptha_Website-backend/Testing_verification/hunt_ids.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/init_super_admin.py and Veediptha_Website-backend/Testing_verification/init_super_admin.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/inspect_db.py and Veediptha_Website-backend/Testing_verification/inspect_db.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/inspect_users_otps.py and Veediptha_Website-backend/Testing_verification/inspect_users_otps.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/list_all_mongo.py and Veediptha_Website-backend/Testing_verification/list_all_mongo.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/list_dbs.py and Veediptha_Website-backend/Testing_verification/list_dbs.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/migrate_no_signals.py and Veediptha_Website-backend/Testing_verification/migrate_no_signals.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/migrate_profiles.py and Veediptha_Website-backend/Testing_verification/migrate_profiles.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/mongoBultAct.ipynb and Veediptha_Website-backend/Testing_verification/mongoBultAct.ipynb differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/push_to_atlas.py and Veediptha_Website-backend/Testing_verification/push_to_atlas.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/requirements.txt and Veediptha_Website-backend/Testing_verification/requirements.txt differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/reset_super_admins - Copy.py and Veediptha_Website-backend/Testing_verification/reset_super_admins - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/reset_super_admins.py and Veediptha_Website-backend/Testing_verification/reset_super_admins.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/setup_admin - Copy.py and Veediptha_Website-backend/Testing_verification/setup_admin - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/setup_admin.py and Veediptha_Website-backend/Testing_verification/setup_admin.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/simulate_login - Copy.py and Veediptha_Website-backend/Testing_verification/simulate_login - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/simulate_login.py and Veediptha_Website-backend/Testing_verification/simulate_login.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/sync_to_ecommerce - Copy.py and Veediptha_Website-backend/Testing_verification/sync_to_ecommerce - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/sync_to_ecommerce.py and Veediptha_Website-backend/Testing_verification/sync_to_ecommerce.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_admin_login - Copy.py and Veediptha_Website-backend/Testing_verification/test_admin_login - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_admin_login.py and Veediptha_Website-backend/Testing_verification/test_admin_login.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_api - Copy.py and Veediptha_Website-backend/Testing_verification/test_api - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_api.py and Veediptha_Website-backend/Testing_verification/test_api.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_api_v2 - Copy.py and Veediptha_Website-backend/Testing_verification/test_api_v2 - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_api_v2.py and Veediptha_Website-backend/Testing_verification/test_api_v2.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_auth - Copy.py and Veediptha_Website-backend/Testing_verification/test_auth - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_auth.py and Veediptha_Website-backend/Testing_verification/test_auth.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_login_api - Copy.py and Veediptha_Website-backend/Testing_verification/test_login_api - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_login_api copy - Copy.py and Veediptha_Website-backend/Testing_verification/test_login_api copy - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_login_api copy.py and Veediptha_Website-backend/Testing_verification/test_login_api copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_login_api.py and Veediptha_Website-backend/Testing_verification/test_login_api.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_lookup - Copy.py and Veediptha_Website-backend/Testing_verification/test_lookup - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_lookup.py and Veediptha_Website-backend/Testing_verification/test_lookup.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_manual_serialization - Copy.py and Veediptha_Website-backend/Testing_verification/test_manual_serialization - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_manual_serialization.py and Veediptha_Website-backend/Testing_verification/test_manual_serialization.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_smtp - Copy.py and Veediptha_Website-backend/Testing_verification/test_smtp - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/test_smtp.py and Veediptha_Website-backend/Testing_verification/test_smtp.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_customer_storage - Copy.py and Veediptha_Website-backend/Testing_verification/verify_customer_storage - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_customer_storage.py and Veediptha_Website-backend/Testing_verification/verify_customer_storage.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_django_data - Copy.py and Veediptha_Website-backend/Testing_verification/verify_django_data - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_django_data.py and Veediptha_Website-backend/Testing_verification/verify_django_data.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_encryption - Copy.py and Veediptha_Website-backend/Testing_verification/verify_encryption - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_encryption.py and Veediptha_Website-backend/Testing_verification/verify_encryption.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_logic - Copy.py and Veediptha_Website-backend/Testing_verification/verify_logic - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_logic.py and Veediptha_Website-backend/Testing_verification/verify_logic.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_otp_hash - Copy.py and Veediptha_Website-backend/Testing_verification/verify_otp_hash - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_otp_hash.py and Veediptha_Website-backend/Testing_verification/verify_otp_hash.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_portal_separation - Copy.py and Veediptha_Website-backend/Testing_verification/verify_portal_separation - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_portal_separation.py and Veediptha_Website-backend/Testing_verification/verify_portal_separation.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_reset_fix - Copy.py and Veediptha_Website-backend/Testing_verification/verify_reset_fix - Copy.py differ
+Files temp_VDF/Veediptha_Website-backend/Testing_verification/verify_reset_fix.py and Veediptha_Website-backend/Testing_verification/verify_reset_fix.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/admin.py and Veediptha_Website-backend/accounts/admin.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/apps.py and Veediptha_Website-backend/accounts/apps.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/authentication.py and Veediptha_Website-backend/accounts/authentication.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/encryption_utils.py and Veediptha_Website-backend/accounts/encryption_utils.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/exceptions.py and Veediptha_Website-backend/accounts/exceptions.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/managers.py and Veediptha_Website-backend/accounts/managers.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0001_initial.py and Veediptha_Website-backend/accounts/migrations/0001_initial.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0002_encryptedprofile_country_code_and_more.py and Veediptha_Website-backend/accounts/migrations/0002_encryptedprofile_country_code_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0003_encryptedprofile__cart_data.py and Veediptha_Website-backend/accounts/migrations/0003_encryptedprofile__cart_data.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0004_remove_encryptedprofile__cart_data_and_more.py and Veediptha_Website-backend/accounts/migrations/0004_remove_encryptedprofile__cart_data_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0005_rename__city_address_enc_city_and_more.py and Veediptha_Website-backend/accounts/migrations/0005_rename__city_address_enc_city_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0006_remove_adminprofile_country_code_and_more.py and Veediptha_Website-backend/accounts/migrations/0006_remove_adminprofile_country_code_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0007_alter_address_id_alter_adminprofile_id_and_more.py and Veediptha_Website-backend/accounts/migrations/0007_alter_address_id_alter_adminprofile_id_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/migrations/0008_productanalytics_customerprofile_favorites_data_and_more.py and Veediptha_Website-backend/accounts/migrations/0008_productanalytics_customerprofile_favorites_data_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/models.py and Veediptha_Website-backend/accounts/models.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/otp_utils.py and Veediptha_Website-backend/accounts/otp_utils.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/rate_limit.py and Veediptha_Website-backend/accounts/rate_limit.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/serializers.py and Veediptha_Website-backend/accounts/serializers.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/tests.py and Veediptha_Website-backend/accounts/tests.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/urls.py and Veediptha_Website-backend/accounts/urls.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/utils.py and Veediptha_Website-backend/accounts/utils.py differ
+Files temp_VDF/Veediptha_Website-backend/accounts/views.py and Veediptha_Website-backend/accounts/views.py differ
+Files temp_VDF/Veediptha_Website-backend/analyze_page.py and Veediptha_Website-backend/analyze_page.py differ
+Files temp_VDF/Veediptha_Website-backend/api/apps.py and Veediptha_Website-backend/api/apps.py differ
+Files temp_VDF/Veediptha_Website-backend/api/currency_utils.py and Veediptha_Website-backend/api/currency_utils.py differ
+Files temp_VDF/Veediptha_Website-backend/api/migrations/0001_initial.py and Veediptha_Website-backend/api/migrations/0001_initial.py differ
+Files temp_VDF/Veediptha_Website-backend/api/migrations/0002_hero_bg_blur_hero_bg_brightness.py and Veediptha_Website-backend/api/migrations/0002_hero_bg_blur_hero_bg_brightness.py differ
+Files temp_VDF/Veediptha_Website-backend/api/migrations/0003_theme_bg_blur_theme_bg_brightness.py and Veediptha_Website-backend/api/migrations/0003_theme_bg_blur_theme_bg_brightness.py differ
+Files temp_VDF/Veediptha_Website-backend/api/migrations/0004_hero_animation_type_hero_parallax_speed_and_more.py and Veediptha_Website-backend/api/migrations/0004_hero_animation_type_hero_parallax_speed_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/api/migrations/0005_websitebranding_websitefooter_websitetheme_and_more.py and Veediptha_Website-backend/api/migrations/0005_websitebranding_websitefooter_websitetheme_and_more.py differ
+Files temp_VDF/Veediptha_Website-backend/api/permissions.py and Veediptha_Website-backend/api/permissions.py differ
+Files temp_VDF/Veediptha_Website-backend/api/tests.py and Veediptha_Website-backend/api/tests.py differ
+Files temp_VDF/Veediptha_Website-backend/api/upload_views.py and Veediptha_Website-backend/api/upload_views.py differ
+Files temp_VDF/Veediptha_Website-backend/api/urls.py and Veediptha_Website-backend/api/urls.py differ
+Files temp_VDF/Veediptha_Website-backend/api/views.py and Veediptha_Website-backend/api/views.py differ
+Files temp_VDF/Veediptha_Website-backend/check_db_data.py and Veediptha_Website-backend/check_db_data.py differ
+Files temp_VDF/Veediptha_Website-backend/core/asgi.py and Veediptha_Website-backend/core/asgi.py differ
+Files temp_VDF/Veediptha_Website-backend/core/monkey_patch.py and Veediptha_Website-backend/core/monkey_patch.py differ
+Files temp_VDF/Veediptha_Website-backend/core/renderers.py and Veediptha_Website-backend/core/renderers.py differ
+Files temp_VDF/Veediptha_Website-backend/core/settings.py and Veediptha_Website-backend/core/settings.py differ
+Files temp_VDF/Veediptha_Website-backend/core/urls.py and Veediptha_Website-backend/core/urls.py differ
+Files temp_VDF/Veediptha_Website-backend/core/vps_storage.py and Veediptha_Website-backend/core/vps_storage.py differ
+Files temp_VDF/Veediptha_Website-backend/core/wsgi.py and Veediptha_Website-backend/core/wsgi.py differ
+Files temp_VDF/Veediptha_Website-backend/db_status.json and Veediptha_Website-backend/db_status.json differ
+Files temp_VDF/Veediptha_Website-backend/debug.log and Veediptha_Website-backend/debug.log differ
+Files temp_VDF/Veediptha_Website-backend/manage.py and Veediptha_Website-backend/manage.py differ
+Files temp_VDF/Veediptha_Website-backend/migrate_collections.py and Veediptha_Website-backend/migrate_collections.py differ
+Files temp_VDF/Veediptha_Website-backend/requirements.txt and Veediptha_Website-backend/requirements.txt differ
+Files temp_VDF/Veediptha_Website-backend/revert_collections.py and Veediptha_Website-backend/revert_collections.py differ
+Files temp_VDF/Veediptha_Website-backend/seed_products_from_excel.py and Veediptha_Website-backend/seed_products_from_excel.py differ
+Files temp_VDF/Veediptha_Website-backend/seed_stories.py and Veediptha_Website-backend/seed_stories.py differ
+Files temp_VDF/Veediptha_Website-backend/test_api.py and Veediptha_Website-backend/test_api.py differ
+Files temp_VDF/Veediptha_Website-backend/update_theme_colors.py and Veediptha_Website-backend/update_theme_colors.py differ
+Files temp_VDF/Veediptha_Website-backend/videepthaFoods.lnk and Veediptha_Website-backend/videepthaFoods.lnk differ

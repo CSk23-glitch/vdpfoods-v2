@@ -12,7 +12,7 @@ import { API_URL } from '../config';
 const DEFAULT_NAV_ITEMS = [
     { label: 'Village', link: '/' },
     { label: 'Market Explorer', link: '/market-explorer' },
-    { label: 'Shop', link: '/products' },
+    { label: 'Collections', link: '/categories' },
     { label: 'Kitchen Stories', link: '/stories' },
     { label: 'Policies', link: '/policies' },
 ];
@@ -47,7 +47,7 @@ const Header = () => {
 
     const isActive = (path: string) => {
         if (path === '/' && location.pathname === '/') return true;
-        if (path.startsWith('/#')) return false; 
+        if (path.startsWith('/#')) return false;
         if (path !== '/' && location.pathname.startsWith(path)) return true;
         return false;
     };
@@ -59,7 +59,7 @@ const Header = () => {
         <header className="fixed top-0 w-full z-[100] transition-all duration-500">
             {/* Top Ticker - Always at top */}
             {!isMinimalistPage && (
-                <HeroTicker 
+                <HeroTicker
                     items={theme?.branding?.ticker_text?.length ? theme.branding.ticker_text : ["Say No to Whites", "Authentic Village Flavors", "Traditional Vedic Methods", "Pure & Organic"]}
                     speed={theme?.branding?.ticker_style?.speed || 25}
                     height="py-2"
@@ -133,7 +133,7 @@ const Header = () => {
                             {/* Actions */}
                             <div className="flex items-center gap-3">
                                 <div className="relative">
-                                    <div 
+                                    <div
                                         onClick={async () => {
                                             setShowLocationTooltip(true);
                                             await refreshLocation();

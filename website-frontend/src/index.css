@@ -7,25 +7,35 @@
 /* ── Design Tokens & Theme Variables ─────────── */
 :root {
   /* 🎨 Core Colors - Shared Default Fallback before DB Loads */
-  --color-primary: #2d4a36;       /* Espalier Deep Green */
-  --color-primary-rgb: 45, 74, 54;
-  --color-secondary: #d55b3e;     /* Obstinate Orange */
-  --color-accent: #007e80;        /* Intense Teal */
-  --color-bg: #ffffff;            /* White Background */
-  --color-surface: #f9f9f9;       /* Light Surface / Guild Grey */
-  --color-text: #1a1a1a;          /* High Contrast Dark Text */
-  --color-text-dim: #4a4a4a;      /* Secondary Muted Text */
-  --color-muted: #94a3b8;         /* Low Contrast/Disabled */
-  
+  --color-primary: #3E7C76;
+  /* New Brand Teal */
+  --color-primary-rgb: 62, 124, 118;
+  --color-secondary: #d55b3e;
+  /* Obstinate Orange */
+  --color-accent: #3E7C76;
+  /* Consistent Teal */
+  --color-bg: #ffffff;
+  /* White Background */
+  --color-surface: #f9f9f9;
+  /* Light Surface / Guild Grey */
+  --color-text: #1a1a1a;
+  /* High Contrast Dark Text */
+  --color-text-dim: #4a4a4a;
+  /* Secondary Muted Text */
+  --color-muted: #94a3b8;
+  /* Low Contrast/Disabled */
+
   /* 🌫️ Glass & Borders */
   --color-border: rgba(0, 0, 0, 0.08);
   --color-panel: rgba(255, 255, 255, 0.85);
   --glass-bg: rgba(255, 255, 255, 0.6);
   --glass-border: rgba(0, 0, 0, 0.1);
-  
+
   /* 🖋️ Typography */
-  --font-serif: 'Playfair Display', serif; /* Titles, Elegant accents */
-  --font-sans: 'Outfit', sans-serif;       /* Buttons, Body, Modern UI */
+  --font-serif: 'Playfair Display', serif;
+  /* Titles, Elegant accents */
+  --font-sans: 'Outfit', sans-serif;
+  /* Buttons, Body, Modern UI */
   --font-size-base: 16px;
 
   /* 📐 Layout Constants */
@@ -34,7 +44,7 @@
   --bottom-nav-height: 80px;
   --radius-card: 2rem;
   --radius-btn: 100px;
-  
+
   /* ✨ Effects */
   --aura-glow: 0 0 30px rgba(var(--color-primary-rgb), 0.3);
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);

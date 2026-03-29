@@ -57,9 +57,18 @@ class ProductDetailView(generics.RetrieveAPIView):
         return response
 
 class CategoryListView(generics.ListAPIView):
-    queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = [permissions.AllowAny]
+
+    def get_queryset(self):
+        queryset = Category.objects.all().order_by('order', 'name')
+        parent_id = self.request.query_params.get('parent')
+        if parent_id:
+            if parent_id == 'null':
+                queryset = queryset.filter(parent__isnull=True)
+            else:
+                queryset = queryset.filter(parent_id=parent_id)
+        return queryset
 
 class CouponListView(generics.ListAPIView):
     queryset = Coupon.objects.all()
